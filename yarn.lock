@@ -5843,8 +5843,10 @@ ret@~0.1.10:
   resolved "https://registry.yarnpkg.com/ret/-/ret-0.1.15.tgz#b8a4825d5bdb1fc3f6f53c2bc33f81388681c7bc"
   integrity sha512-TTlYpa+OL+vMMNG24xSlQGEJ3B/RzEfUlLct7b5G/ytav+wPrplCpVMFuwzXbkecJrb6IYo1iFb0S9v37754mg==
 
-rhfa-react-native@../rhfa-react-native:
+rhfa-react-native@^1.0.0:
   version "1.0.0"
+  resolved "https://registry.yarnpkg.com/rhfa-react-native/-/rhfa-react-native-1.0.0.tgz#d255b0f5b3b50297b1f9a240bec4134efc83de77"
+  integrity sha512-sJ8Hih/4CFNtg08uRt2fyrQhPZRfSWhJIWouP13mkmKk/wg2lrQUt8N+uzV7OGVAGTLkyo0xUTlImRZvdkK5/w==
   dependencies:
     react-hook-form-auto "^1.0.0"
 

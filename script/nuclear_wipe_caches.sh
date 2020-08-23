@@ -15,7 +15,9 @@ then
 fi
 
 cd ..
+
 ./tie-native.sh
 # ./fix-to-local.sh
-cd RhfaDemoReactNative
+
+cd rhfa-demo-react-native
 yarn start
