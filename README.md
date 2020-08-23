@@ -2,8 +2,6 @@
 
 Demo for [rhfa-react-native](https://github.com/dgonz64/rhfa-react-native).
 
-![Some Android](assets/android.png?raw=true "Result demo")
-
 ## Usage
 
 ### In one terminal
@@ -15,3 +13,5 @@ Demo for [rhfa-react-native](https://github.com/dgonz64/rhfa-react-native).
     yarn run android
 
 (or ios or something)
+
+![Some Android](assets/android.png?raw=true "Result demo")
