@@ -1,0 +1,14 @@
+Start:
+
+npx react-native start
+npx react-native run-android
+
+Caches:
+
+watchman watch-del-all
+yarn start --reset-cache
+
+rm -rf $TMPDIR/react-native-packager-cache-*
+rm -rf $TMPDIR/metro-bundler-cache-*
+rm -rf node_modules/ && npm cache clean && npm install
+npm start -- --reset-cache
