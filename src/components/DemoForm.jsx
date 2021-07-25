@@ -46,10 +46,10 @@ addTranslations({
 })
 
 export const DemoForm = ({ schema, config }) => {
-  const formRef = useRef()
-  function handleImperativeSubmit() {
-    formRef.current.submit()
-  }
+    const formRef = useRef()
+    function handleImperativeSubmit() {
+      formRef.current.submit()
+    }
 
   function handleSubmit(doc) {
     Alert.alert(
