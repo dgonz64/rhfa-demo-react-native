@@ -7,13 +7,23 @@ const pet = createSchema('pet', {
     maxLength: 8
   },
   heads: {
-    type: Number
+    type: Number,
+    onChange: (value, { arrayControl }) => {
+      if (value == '42')
+        arrayControl.add()
+      if (value == '13')
+        arrayControl.remove(arrayControl.index)
+    },
+    helperText: 'Enter 42 to add and 13 to remove'
   },
   hair: {
     type: 'select',
-    options: ['blue', 'yellow']
+    options: ['blue', 'yellow'],
+    onChange: (value, { name, setHelperText }) => {
+      setHelperText(name, `Better not choose ${value}`)
+    }
   },
-})
+});
 
 export const owner = createSchema('owner', {
   name: {
@@ -22,20 +32,26 @@ export const owner = createSchema('owner', {
   },
   height: {
     type: 'radios',
-    options: ['tall', 'short']
+    options: ['tall', 'short'],
+    onChange: (value, { setValue }) => {
+      if (value == 'tall')
+        setValue('name', 'André the Giant')
+    }
   },
   usesHat: {
-    type: 'boolean'
+    type: 'boolean',
+    onChange: (value, { setVisible }) => {
+      setVisible('hatColor', value)
+    }
   },
-  armLength: {
-    type: 'range',
-    min: 1,
-    max: 10,
-    step: 0.1
+  hatColor: {
+    type: 'select',
+    options: ['black', 'red'],
+    initiallyVisible: false
   },
   pets: {
     type: [pet],
     minChildren: 1,
-    maxChildren: 3
+    maxChildren: 2
   }
-})
+});

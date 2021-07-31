@@ -14,4 +14,8 @@ Demo for [rhfa-react-native](https://github.com/dgonz64/rhfa-react-native).
 
 (or ios or something)
 
+### Help
+
+    npx react-devtools
+
 ![Some Android](assets/android.png?raw=true "Result demo")
