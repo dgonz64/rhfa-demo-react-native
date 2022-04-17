@@ -5,7 +5,7 @@ echo "$0 --unfuck-modules (optional)"
 unfuck=$1
 
 set -e
-npx watchman watch-del-all
+# npx watchman watch-del-all
 rm -rf /tmp/metro-*
 
 if [ "$unfuck" = "--unfuck-modules" ]
@@ -20,4 +20,4 @@ cd ..
 # ./fix-to-local.sh
 
 cd rhfa-demo-react-native
-yarn start
+yarn start --reset-cache

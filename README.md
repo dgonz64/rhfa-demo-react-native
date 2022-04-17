@@ -18,4 +18,12 @@ Demo for [rhfa-react-native](https://github.com/dgonz64/rhfa-react-native).
 
     npx react-devtools
 
+### Script useful for developing
+
+In the `yarn start` terminal window:
+
+    script/nuclear_wipe_caches.sh
+
+it will yarn start after cache wipe
+
 ![Some Android](assets/android.png?raw=true "Result demo")
